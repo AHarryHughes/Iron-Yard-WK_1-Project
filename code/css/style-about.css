@@ -1,0 +1,221 @@
+/* font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;
+
+Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343
+
+The header/navigation component is always fixed to the top. Contents should scroll behind this component.
+Navigation links at the top should link to the corresponding pages in your project directory (paths may vary for each .html document).
+The currently visited page's navigation link should have an "active" state.
+Use flexbox for grid level layout.
+The text "dedicated environment" in the first paragraph of the about page is an inline link. It should link a user to the "Facilities" section below when clicked.
+The newsletter signup page has a minimum height of the viewport's height.
+The newsletter signup module is centered horizontally and vertically on the page.
+The "Name" input field on the newsletter page should have the type text.
+The "Email" input field on the newsletter page should have the type email.
+
+Create and apply a favicon.
+Use CSS only to make navigation links all caps.
+Apply a subtle drop shadow to the bottom of the header.
+Apply a subtle transition duration to hover and focus states
+Apply parallax scrolling to the background image in the "Room to Grow" section on the about page. When scrolled the image appears to stay stationary while the sections above and below scroll over. This can be done with with the css background and background-size properties.
+Add the id nameInput to the name input field in the newsletter page.
+Add the id emailInput to the email input field in the newsletter page.
+Add the id signupButton to the "Submit" button in the newsletter page.
+Include the following code snippet just before the closing body tag (</body>) in newsletter/index.html:
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: auto;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Merriweather', 'Josefin Sans';
+  width: 100%;
+  //border: 1px solid black;
+  font-weight: 300;
+}
+
+nav{
+  background-color:  #FFFFFF;
+  display: flex;
+  height: 50px;
+  padding: 1.75% 32% 0 32%;
+  box-shadow: 2px 2px grey;
+  position: fixed;
+  z-index: 1;
+}
+div.logo{
+  background-image: url('../../optimized/bent-creek-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position:absolute;
+  left: 1%;
+  top: 1%;
+  width: 35px;
+  height: 40px;
+
+}
+ul{
+  font-size: 85%;
+  display: flex;
+  flex-direction:row;
+  text-align:center;
+  justify-content: space-between;
+}
+li{
+  font-family: 'Roboto';
+  display: inline;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: underline;
+}
+li a:active {
+    color: #968772;
+}
+li a:hover{
+  color: #CD5D67;
+}
+li a{
+  color:  #2B2F26;
+}
+li:last-child{
+  margin-left: 4.5%;
+}
+main{
+  background-color: #F2F1E8;
+  line-height: 2;
+}
+header{
+  text-align: center;
+  height: 225px;
+}
+header h1{
+  position: absolute;
+  top: 100px;
+  font-size: 3.2em;
+  font-weight: 500;
+}
+div.intro{
+  height: 400px;
+  padding: 0px 110px 0px 110px;
+}
+div.img-1{
+  background-image: url(../../optimized/birdhouse.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 132px;
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+}
+blockquote{
+  margin-top: 30px;
+  padding: 25px;
+  font-style:italic;
+  border-left: 1px solid #967343;
+  font-weight: lighter;
+}
+div.history{
+  padding: 20px 110px 20px 110px;
+}
+h3{
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+div.background-img{
+  height: 280px;
+  color: white;
+  text-align: center;
+  background-image: url('../../optimized/background-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 40px;
+}
+div.background-img h1{
+  position: absolute;
+  top: 990px;
+  font-size: 3em;
+}
+div.facilities{
+  padding: 0px 110px 0px 110px;
+  margin-bottom: 300px;
+}
+div.text{
+  width: 75%;
+  float: left;
+}
+div.facilities h3{
+}
+aside{
+  width: 25%;
+  float: right;
+}
+div.img-2{
+  background-image: url('../../optimized/background-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100px;
+  width: 150px;
+  margin-top: 60px;
+}
+aside p{
+  padding: 13px;
+  font-size: .7em;
+  line-height: 1.5;
+}
+div.monthly-plans{
+  padding: 0px 110px 0px 110px;
+  height: 300px;
+}
+div.monthly-plans h3{
+  margin-top: 320px;
+}
+table{
+  border-collapse: collapse;
+  padding: 10px;
+  white-space: nowrap;
+  height: 200px;
+  border: 1px solid black;
+  width: 75%;
+  float: left;
+}
+th{
+  border: 1px solid black;
+  padding: 10px;
+}
+td{
+  border: 1px solid black;
+  padding: 10px;
+}
+footer{
+  background-color: rgb(82,80,80);
+  height: 65px;
+}
+footer > span{
+  position: absolute;
+  left: 3%;
+  top: 1810px;
+  color: #Ffffff;
+  font-size: .8em
+}
