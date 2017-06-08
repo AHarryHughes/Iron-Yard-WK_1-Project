@@ -42,7 +42,7 @@ Include the following code snippet just before the closing body tag (</body>) in
 }
 
 * {
-  margin: auto;
+  margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
@@ -51,28 +51,28 @@ Include the following code snippet just before the closing body tag (</body>) in
   background: transparent;
   font-family: 'Merriweather', 'Josefin Sans';
   width: 100%;
-  //border: 1px solid black;
+  //border: 1px solid grey;
   font-weight: lighter;
 }
 nav{
   background-color:  #FFFFFF;
   display: flex;
-  height: 50px;
+  justify-content: space-around;
+  height: 60px;
   padding: 1.75% 32% 0 32%;
   box-shadow: 2px 2px grey;
-  /*position: fixed;
-  z-index: 1;*/
+  position: fixed;
+  z-index: 1;
 }
 div.logo{
   background-image: url('../../optimized/bent-creek-logo.png');
   background-size: contain;
   background-repeat: no-repeat;
-  position:absolute;
+  width: 45px;
+  height: 50px;
+  position: absolute;
   left: 1%;
-  top: 1%;
-  width: 35px;
-  height: 40px;
-
+  top: 15%;
 }
 ul{
   font-size: 85%;
@@ -101,51 +101,140 @@ li:last-child{
   margin-left: 4.5%;
 }
 main{
-  background-image: url('../../optimized/background-2.jpg');
+  background-color: #F2F1E8;
+}
+header{
+  text-align: center;
+  height: 225px;
+}
+div.heading{
+  position:absolute;
+  top: 90px;
+  letter-spacing: .1em;
+}
+h1{
+  font-size: 2.7em;
+  font-weight: 400;
+  margin-bottom: 7px
+}
+h2{
+  font-size: 1.7em;
+}
+div.pots{
+  display: flex;
+  height: 495px;
+  flex-wrap: wrap;
+}
+div.photos:first-child{
+  background-image: url('../../optimized/product-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
-  text-align: center;
+  width: 58%;
+  Height: 55%;
+  margin: 5px;
 }
-div.input-box{
-  background-color: white;
-  height: 310px;
-  width: 54%;
+div.photos:nth-child(2){
+  background-image: url('../../optimized/product-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 19%;
+  Height: 55%;
+
+  margin: 5px;
+}
+div.photos:nth-child(3){
+  background-image: url('../../optimized/product-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 19%;
+  Height: 55%;
+
+  margin: 5px;
+}
+div.photos:nth-child(4){
+  background-image: url('../../optimized/product-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 19%;
+  Height: 39%;
+
+  margin: 5px;
+}
+div.photos:nth-child(5){
+  background-image: url('../../optimized/product-5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 19%;
+  Height: 39%;
+
+  margin: 5px;
+}
+div.photos:nth-child(6){
+  background-image: url('../../optimized/product-6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 38%;
+  Height: 39%;
+
+  margin: 5px;
+}
+div.photos:last-child{
+  background-image: url('../../optimized/product-7.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 19%;
+  Height: 39%;
+
+  margin: 5px;
+}
+div.photos:first-child div.img-description{
   position: absolute;
-  top: 100px;
-  left: 230px;
-  padding: 1%;
+  left: 5px;
+  bottom: 250px;
 }
-h3{
-  font-size: 1.5em;
-  padding: 5%;
+div.photos:nth-child(2) div.img-description{
+  position: absolute;
+  left: 552px;
+  bottom: 250px;
 }
-h4{
-  padding-bottom: 5%;
+div.photos:nth-child(3) div.img-description{
+  position: absolute;
+  left: 737px;
+  bottom: 250px;
 }
-div.input-box ul{
-  display: flex;
-  flex-direction: column;
+div.photos:nth-child(4) div.img-description{
+  position: absolute;
+  left: 5px;
+  bottom: 40px;
 }
-div.input-box li{
-  margin: 3.7%;
-  border-bottom: 1.5px solid #968772;
-  color: #ffffff;
-  width: 93%
+div.photos:nth-child(5) div.img-description{
+  position: absolute;
+  left: 191px;
+  bottom: 40px;
 }
-button{
-  background-color: #968772;
-  width: 23%;
-  height: 15%;
-  margin: 1%;
-  color: #F2F1E8;
+div.photos:nth-child(6) div.img-description{
+  position: absolute;
+  left: 377px;
+  bottom: 40px;
 }
-button:hover{
-  color: #FFFFFF;
+div.photos:last-child div.img-description{
+  position: absolute;
+  left: 738px;
+  bottom: 40px;
 }
-button:focus{
-  border-bottom:1px solid #967343;
+div.img-description span{
+  background-color: rgb(82,80,80);
+  color: #Ffffff;
+  padding: 7px 5px 7px 5px;
 }
-button:hover{
-  background-color: #967343;
+footer{
+  background-color: rgb(82,80,80);
+  height: 65px;
+}
+footer > span{
+  position: absolute;
+  left: 3%;
+  top: 735px;
+  color: #Ffffff;
+  font-size: .8em
 }
