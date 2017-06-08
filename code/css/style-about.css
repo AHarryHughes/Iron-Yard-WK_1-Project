@@ -116,7 +116,10 @@ header h1{
 }
 div.intro{
   height: 400px;
-  padding: 0px 110px 0px 110px;
+  padding: 0% 23% 0% 23%;
+}
+div.intro a{
+  color: #968772;
 }
 div.img-1{
   background-image: url(../../optimized/birdhouse.jpg);
@@ -135,7 +138,8 @@ blockquote{
   font-weight: lighter;
 }
 div.history{
-  padding: 20px 110px 20px 110px;
+  padding: 0% 23% 0% 23%;
+  margin-bottom: 4%;
 }
 h3{
   margin-bottom: 15px;
@@ -157,7 +161,7 @@ div.background-img h1{
   font-size: 3em;
 }
 div.facilities{
-  padding: 0px 110px 0px 110px;
+  padding:  0% 23% 0% 23%;
   margin-bottom: 300px;
 }
 div.text{
@@ -184,11 +188,8 @@ aside p{
   line-height: 1.5;
 }
 div.monthly-plans{
-  padding: 0px 110px 0px 110px;
+  padding: 0% 23% 0% 23%;
   height: 300px;
-}
-div.monthly-plans h3{
-  margin-top: 320px;
 }
 table{
   border-collapse: collapse;
@@ -206,6 +207,9 @@ th{
 td{
   border: 1px solid black;
   padding: 10px;
+}
+tr:nth-child(2) td{
+  background-color: rgb(242,234,220)
 }
 footer{
   background-color: rgb(82,80,80);
